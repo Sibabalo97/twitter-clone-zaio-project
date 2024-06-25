@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>twitter</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts (Optional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="layout">
+        <div class="layout__left_sidebar">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="logo">
+                <g>
+                    <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                    </path>
+                </g>
+            </svg>
+            <div class="sidebar-menu">
+                <div class="sidebar-menu-item sidebar-menu-item--active">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="sidebar-menu-item-icon">
+                        <g>
+                            <path
+                                d="M21.591 7.146L12.52 1.157c-.316-.21-.724-.21-1.04 0l-9.071 5.99c-.26.173-.409.456-.409.757v13.183c0 .502.418.913.929.913H9.14c.51 0 .929-.41.929-.913v-7.075h3.909v7.075c0 .502.417.913.928.913h6.165c.511 0 .929-.41.929-.913V7.904c0-.301-.158-.584-.408-.758z">
+                            </path>
+                        </g>
+                    </svg>
+                    Home
+                </div>
+                <div class="sidebar-menu-item">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="sidebar-menu-item-icon">
+                        <g>
+                            <path
+                                d="M10.25 4.25c-3.314 0-6 2.686-6 6s2.686 6 6 6c1.657 0 3.155-.67 4.243-1.757 1.087-1.088 1.757-2.586 1.757-4.243 0-3.314-2.686-6-6-6zm-9 6c0-4.971 4.029-9 9-9s9 4.029 9 9c0 1.943-.617 3.744-1.664 5.215l4.475 4.474-2.122 2.122-4.474-4.475c-1.471 1.047-3.272 1.664-5.215 1.664-4.971 0-9-4.029-9-9z">
+                            </path>
+                        </g>
+                    </svg>
+                    Explore
+                </div>
+                <div class="sidebar-menu-item">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="sidebar-menu-item-icon">
+                        <g>
+                            <path
+                                d="M11.996 2c-4.062 0-7.49 3.021-7.999 7.051L2.866 18H7.1c.463 2.282 2.481 4 4.9 4s4.437-1.718 4.9-4h4.236l-1.143-8.958C19.48 5.017 16.054 2 11.996 2zM9.171 18h5.658c-.412 1.165-1.523 2-2.829 2s-2.417-.835-2.829-2z">
+                            </path>
+                        </g>
+                    </svg>
+                    Notifications
+                </div>
+                <div class="sidebar-menu-item">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="sidebar-menu-item-icon">
+                        <g>
+                            <path
+                                d="M1.998 4.499c0-.828.671-1.499 1.5-1.499h17c.828 0 1.5.671 1.5 1.499v2.858l-10 4.545-10-4.547V4.499zm0 5.053V19.5c0 .828.671 1.5 1.5 1.5h17c.828 0 1.5-.672 1.5-1.5V9.554l-10 4.545-10-4.547z">
+                            </path>
+                        </g>
+                    </svg>
+                    Messages
+                </div>
+                <div class="sidebar-menu-item">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="sidebar-menu-item-icon">
+                        <g>
+                            <path
+                                d="M10.25 4.25c-3.314 0-6 2.686-6 6s2.686 6 6 6c1.657 0 3.155-.67 4.243-1.757 1.087-1.088 1.757-2.586 1.757-4.243 0-3.314-2.686-6-6-6zm-9 6c0-4.971 4.029-9 9-9s9 4.029 9 9c0 1.943-.617 3.744-1.664 5.215l4.475 4.474-2.122 2.122-4.474-4.475c-1.471 1.047-3.272 1.664-5.215 1.664-4.971 0-9-4.029-9-9z">
+                            </path>
+                        </g>
+                    </svg>
+                    Explore
+                </div>
+                <div class="sidebar-menu-item">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="sidebar-menu-item-icon">
+                        <g>
+                            <path clip-rule="evenodd"
+                                d="M6 2h12c2.21 0 4 1.79 4 4v12c0 2.21-1.79 4-4 4H6c-2.21 0-4-1.79-4-4V6c0-2.21 1.79-4 4-4zm.643 15.8l8.109-11.58h2.515L9.158 17.8H6.643z"
+                                fill-rule="evenodd"></path>
+                        </g>
+                    </svg>
+                    Grok
+                </div>
+                <div class="sidebar-menu-item">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="sidebar-menu-item-icon">
+                        <g>
+                            <path d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5z">
+                            </path>
+                        </g>
+                    </svg>
+                    Bookmarks
+                </div>
+                <div class="sidebar-menu-item">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="sidebar-menu-item-icon">
+                        <g>
+                            <path
+                                d="M7.471 21H.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977.963 0 1.95.212 2.87.672-1.608 1.732-2.762 4.389-2.869 8.248l-.03 1.083zM9.616 9.27C10.452 8.63 11 7.632 11 6.5 11 4.57 9.433 3 7.5 3S4 4.57 4 6.5c0 1.132.548 2.13 1.384 2.77.589.451 1.317.73 2.116.73s1.527-.279 2.116-.73zm6.884 1.726c-3.264 0-6.816 2.358-7 8.977L9.471 21h14.057l-.029-1.027c-.184-6.618-3.736-8.977-7-8.977zm2.116-1.726C19.452 8.63 20 7.632 20 6.5 20 4.57 18.433 3 16.5 3S13 4.57 13 6.5c0 1.132.548 2.13 1.384 2.77.589.451 1.317.73 2.116.73s1.527-.279 2.116-.73z">
+                            </path>
+                        </g>
+                    </svg>
+                    Communities
+                </div>
+                <div class="sidebar-menu-item">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="sidebar-menu-item-icon">
+                        <g>
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                            </path>
+                        </g>
+                    </svg>
+                    Premium
+                </div>
+
+                <div class="sidebar-menu-item">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="sidebar-menu-item-icon">
+                        <g>
+                            <path
+                                d="M17.863 13.44c1.477 1.58 2.366 3.8 2.632 6.46l.11 1.1H3.395l.11-1.1c.266-2.66 1.155-4.88 2.632-6.46C7.627 11.85 9.648 11 12 11s4.373.85 5.863 2.44zM12 2C9.791 2 8 3.79 8 6s1.791 4 4 4 4-1.79 4-4-1.791-4-4-4z">
+                            </path>
+                        </g>
+                    </svg>
+                    Profile
+                </div>
+                <div class="sidebar-menu-item">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="sidebar-menu-item-icon">
+                        <g>
+                            <path
+                                d="M3.75 12c0-4.56 3.69-8.25 8.25-8.25s8.25 3.69 8.25 8.25-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12zM12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zm-4.75 11.5c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25S6 11.31 6 12s.56 1.25 1.25 1.25zm9.5 0c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25-1.25.56-1.25 1.25.56 1.25 1.25 1.25zM13.25 12c0 .69-.56 1.25-1.25 1.25s-1.25-.56-1.25-1.25.56-1.25 1.25-1.25 1.25.56 1.25 1.25z">
+                            </path>
+                        </g>
+                    </svg>
+                    More
+                </div>
+
+                <!-- Add the "Post" button -->
+                <button class="post-button">Post</button>
+
+
+                <div class="who-to-follow-block">
+                    <img src="./images/profile-image-1.jpg" alt="" class="who-to-follow-author-logo">
+                    <div class="who-to-follow-content">
+                        <div>
+                            <div class="who-to-to-follow-author-name">
+                                SibabaloMaqiyane
+                            </div>
+                            <div class="who-to-to-follow-author-slung">
+                                @Maqiyane789523
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layout_mainbar">
+            <div class="title-container">
+                <div class="tabs-container">
+                    <div class="tab active">Home</div>
+                    <div class="tab">For You</div>
+                    <div class="tab">Following</div>
+                </div>
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="star-icon" width="24" height="24">
+                    <g>
+                        <path
+                            d="M12 17.75l-6.6 4.425c-.49.33-1.18-.14-.96-.75l2.46-7.17-5.92-4.31c-.51-.37-.25-1.16.38-1.16h7.3l2.4-7.25c.22-.66 1.14-.66 1.36 0l2.4 7.25h7.3c.63 0 .89.79.38 1.16l-5.92 4.31 2.46 7.17c.22.61-.47 1.08-.96.75L12 17.75z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+            <!-- Tweet 1 -->
+            <div class="tweet">
+                <img src="./images/profile-image-1.jpg" alt="" class="authors-image">
+                <div class="main-tweet">
+                    <div class="tweet-header">
+                        <div class="tweet-author-name">
+                            Sibabalo@Gmail.com
+                        </div>
+                        <div class="tweet-author-slung">
+                            @Nigger
+                        </div>
+                        <div class="tweet-author-time">
+                            2 min ago
+                        </div>
+                    </div>
+                    <div class="tweet-content">
+                        Cristiano Junior & Receba doing Ronaldo x Marcelo celebration 😍🔥
+                        <a href="https://x.com/Cristiano/status/1802604887353459163">link Demo</a>
+                        <img src="./images/post-image-1.jpeg" alt="" class="content-img">
+                        <p>3:35 AM · Jun 17, 2024. 8.4M Views</p>
+                    </div>
+                    <div class="tweet-footer">
+                        <div class="tweet-footer-item">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="tweet-footer-icon">
+                                <g>
+                                    <path
+                                        d="M14.046 2.242c-3.178 0-5.742 2.635-5.742 5.86 0 1.027.17 2.05.51 3.034.39 1.123 1.005 2.14 1.82 3.016l3.546 3.946c.118.132.31.132.428 0l3.546-3.946c.815-.876 1.43-1.893 1.82-3.016.34-.984.51-2.007.51-3.034 0-3.225-2.564-5.86-5.742-5.86zm0 7.268c-.992 0-1.798-.836-1.798-1.866s.806-1.866 1.798-1.866 1.798.836 1.798 1.866-.806 1.866-1.798 1.866z">
+                                    </path>
+                                </g>
+                            </svg>
+                            123
+                        </div>
+                        <div class="tweet-footer-item">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="tweet-footer-icon">
+                                <g>
+                                    <path
+                                        d="M14.046 2.242c-3.178 0-5.742 2.635-5.742 5.86 0 1.027.17 2.05.51 3.034.39 1.123 1.005 2.14 1.82 3.016l3.546 3.946c.118.132.31.132.428 0l3.546-3.946c.815-.876 1.43-1.893 1.82-3.016.34-.984.51-2.007.51-3.034 0-3.225-2.564-5.86-5.742-5.86zm0 7.268c-.992 0-1.798-.836-1.798-1.866s.806-1.866 1.798-1.866 1.798.836 1.798 1.866-.806 1.866-1.798 1.866z">
+                                    </path>
+                                </g>
+                            </svg>
+                            456
+                        </div>
+                        <div class="tweet-footer-item">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="tweet-footer-icon">
+                                <g>
+                                    <path
+                                        d="M12 20.75c-4.831 0-8.75-3.919-8.75-8.75s3.919-8.75 8.75-8.75 8.75 3.919 8.75 8.75-3.919 8.75-8.75 8.75zm0-15c-3.45 0-6.25 2.8-6.25 6.25s2.8 6.25 6.25 6.25 6.25-2.8 6.25-6.25-2.8-6.25-6.25-6.25z">
+                                    </path>
+                                </g>
+                            </svg>
+                            789
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tweet 2 -->
+            <div class="tweet">
+                <img src="./images/test.jpg" alt="" class="authors-image">
+                <div class="main-tweet">
+                    <div class="tweet-header">
+                        <div class="tweet-author-name">
+                            @thequeenells
+                        </div>
+                        <div class="tweet-author-slung">
+                            The crown is niceeeee
+                        </div>
+                        <div class="tweet-author-time">
+                            2h ago
+                        </div>
+                    </div>
+                    <div class="tweet-content">
+                        ells my favorite style rn 🫰🏽
+                        <a href="https://x.com/Cristiano/status/1802604887353459163">link Demo</a>
+                        <img src="./images/Screenshot 2024-06-19 005631.png" alt="" class="content-img">
+                        <p>3:35 AM · Jun 17, 2024. 8.4M Views</p>
+                    </div>
+                    <div class="tweet-footer">
+                        <div class="tweet-footer-item">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="tweet-footer-icon">
+                                <g>
+                                    <path
+                                        d="M14.046 2.242c-3.178 0-5.742 2.635-5.742 5.86 0 1.027.17 2.05.51 3.034.39 1.123 1.005 2.14 1.82 3.016l3.546 3.946c.118.132.31.132.428 0l3.546-3.946c.815-.876 1.43-1.893 1.82-3.016.34-.984.51-2.007.51-3.034 0-3.225-2.564-5.86-5.742-5.86zm0 7.268c-.992 0-1.798-.836-1.798-1.866s.806-1.866 1.798-1.866 1.798.836 1.798 1.866-.806 1.866-1.798 1.866z">
+                                    </path>
+                                </g>
+                            </svg>
+                            123
+                        </div>
+                        <div class="tweet-footer-item">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="tweet-footer-icon">
+                                <g>
+                                    <path
+                                        d="M12 20.75c-4.831 0-8.75-3.919-8.75-8.75s3.919-8.75 8.75-8.75 8.75 3.919 8.75 8.75-3.919 8.75-8.75 8.75zm0-15c-3.45 0-6.25 2.8-6.25 6.25s2.8 6.25 6.25 6.25 6.25-2.8 6.25-6.25-2.8-6.25-6.25-6.25z">
+                                    </path>
+                                </g>
+                            </svg>
+                            456
+                        </div>
+                        <div class="tweet-footer-item">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="tweet-footer-icon">
+                                <g>
+                                    <path
+                                        d="M15 22.75H5c-.5 0-.937-.305-1.125-.775l-3.25-9c-.145-.403.015-.85.375-1.075.36-.225.84-.17 1.125.125l.425.425V5.25C2.25 4.56 2.81 4 3.5 4h17c.69 0 1.25.56 1.25 1.25v8c0 .69-.56 1.25-1.25 1.25H6.47l1.94 5.75h6.59c.69 0 1.25.56 1.25 1.25s-.56 1.25-1.25 1.25zM3.25 7.75V11h17V7.75h-17z">
+                                    </path>
+                                </g>
+                            </svg>
+                            789
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="layout-right-sidebar-container">
+            <div class="layout__right_sidebar">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search Twitter">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+                        <g>
+                            <path
+                                d="M10.5 19c-4.694 0-8.5-3.806-8.5-8.5s3.806-8.5 8.5-8.5 8.5 3.806 8.5 8.5-3.806 8.5-8.5 8.5zm0-15.5c-3.867 0-7 3.133-7 7s3.133 7 7 7 7-3.133 7-7-3.133-7-7-7zm10.55 15.044l-3.601-3.601c-.276-.276-.682-.276-.958 0s-.276.682 0 .958l3.601 3.601c.276.276.682.276.958 0s.276-.682 0-.958z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="trends-for-you">
+                    <div class="trends-for-you-block">
+                        <div class="trends-for-you-heading">
+                            Trends for you
+                        </div>
+                        <div class="trends-for-you-block">
+                            <div class="trends-for-you-mea-information">
+                                Trending in South Africa
+                            </div>
+                            <div class="trends-for-you-trend-name">
+                                #iphone12
+                            </div>
+                            <div class="trends-for-you-mea-information">
+                                140k Tweets
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trends-for-you-block">
+                        <div class="trends-for-you-block">
+                            <div class="trends-for-you-mea-information">
+                                Trending in Cape Town
+                            </div>
+                            <div class="trends-for-you-trend-name">
+                                #MacBo0k
+                            </div>
+                            <div class="trends-for-you-mea-information">
+                                120k Tweets
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trends-for-you-block">
+                        <div class="trends-for-you-block">
+                            <div class="trends-for-you-mea-information">
+                                Trending in Jozi
+                            </div>
+                            <div class="trends-for-you-trend-name">
+                                #autos
+                            </div>
+                            <div class="trends-for-you-mea-information">
+                                10,000 Tweets
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trends-for-you-block">
+                        <div class="trends-for-you-block">
+                            <div class="trends-for-you-mea-information">
+                                Trending in Gauteng
+                            </div>
+                            <div class="trends-for-you-trend-name">
+                                #Lenovo
+                            </div>
+                            <div class="trends-for-you-mea-information">
+                                5000 Tweets
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="who-to-follow">
+                    <div class="who-to-follow-block">
+                        <div class="who-to-follow-heading">
+                            Who to follow
+                        </div>
+                    </div>
+                    <div class="who-to-follow-block">
+                        <img src="./images/test.jpg" alt="" class="who-to-follow-author-logo">
+                        <div class="who-to-follow-content">
+                            <div>
+                                <div class="who-to-to-follow-author-name">
+                                    @thequeenells
+                                </div>
+                                <div class="who-to-to-follow-author-slung">
+                                    @YourHun
+                                </div>
+                            </div>
+                            <div class="who-to-follow-button">
+                                Follow
+                            </div>
+                        </div>
+                    </div>
+                    <div class="who-to-follow-block">
+                    </div>
+                    <div class="who-to-follow-block">
+                        <img src="./images/profile-image-1.jpg" alt="" class="who-to-follow-author-logo">
+                        <div class="who-to-follow-content">
+                            <div>
+                                <div class="who-to-to-follow-author-name">
+                                    @SibabaloGmail
+                                </div>
+                                <div class="who-to-to-follow-author-slung">
+                                    @Nigger
+                                </div>
+                            </div>
+                            <div class="who-to-follow-button">
+                                Follow
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
